@@ -23,22 +23,22 @@
         };
 
         Parantheses {
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>, <&kp LEFT>;
             key-positions = <9 10>;
         };
 
         SquareBrackets {
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>, <&kp LEFT>;
             key-positions = <21 22>;
         };
 
         CurlyBrackets {
-            bindings = <&kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET) &kp LEFT>;
+            bindings = <&kp LS(LEFT_BRACKET)>, <&kp LS(RIGHT_BRACKET)>, <&kp LEFT>;
             key-positions = <37 38>;
         };
 
         AngleBrackets {
-            bindings = <&kp LS(COMMA) &kp LS(DOT) &kp LEFT>;
+            bindings = <&kp LS(COMMA)>, <&kp LS(DOT)>, <&kp LEFT>;
             key-positions = <37 36>;
         };
 
