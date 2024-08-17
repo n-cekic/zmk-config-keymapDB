@@ -14,10 +14,10 @@
 
         Alphas {
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  Q  |  W  |  E    |  R   |  T   |                                      |  Y   |  U   |  I    |  O   |   P   | BCKSP |
-            // |  TAB  |  A  |  S  |  D    |  F   |  G   |                                      |  H   |  J   |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C    |  V   |  B   | DELETE  | ENTER |  |  WIN  |   CLCK  |  N   |  M   |  ,    |  .   |   /   | ENTER |
-            //                     | PRTSC |  ALT | CTRL | L(2)/SP |  L(4) |  |  L(3) | L(2)/SP | CTRL |  ALT | PL/PA |
+            // |  ESC  |  Q  |  W  |  E    |  R   |  T   |                                         |  Y   |  U   |  I    |  O   |   P   | BCKSP |
+            // |  TAB  |  A  |  S  |  D    |  F   |  G   |                                         |  H   |  J   |  K    |  L   |   ;   |   '   |
+            // | SHIFT |  Z  |  X  |  C    |  V   |  B   | DELETE  |  BCKSP   |  |  WIN  |   CLCK  |  N   |  M   |  ,    |  .   |   /   | ENTER |
+            //                     | PRTSC |  ALT | CTRL | L(2)/SP | L(4)/ENT |  |  L(3) | L(2)/SP | CTRL |  ALT | PL/PA |
 
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E            &kp R         &kp T                                                                     &kp Y              &kp U          &kp I             &kp O    &kp P     &kp BACKSPACE
@@ -61,8 +61,8 @@
 
         NavLayer {
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // |       |  !   |  @   |  #   |  $   |  %   |                                         |  ^   |  &   |  *   |  (   |   )  |      |
-            // |       |      |      |      |      |      |                                         | HOME |  UP  | END  |  [   |   ]  |  \   |
+            // |   `   |  !   |  @   |  #   |  $   |  %   |                                         |  ^   |  &   |  *   |  (   |   )  |      |
+            // |  CAPS |      |      |      |      |      |                                         | HOME |  UP  | END  |  [   |   ]  |  \   |
             // |       |      |      |      |      |      |      |      |      |      |      |      | LEFT | DOWN | RGHT |  {   |   }  |      |
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
