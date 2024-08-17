@@ -23,18 +23,23 @@
         };
 
         Parantheses {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
             key-positions = <9 10>;
         };
 
         SquareBrackets {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
             key-positions = <21 22>;
         };
 
         CurlyBrackets {
-            bindings = <&kp LS(LEFT_BRACKET)>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET) &kp LEFT>;
             key-positions = <37 38>;
+        };
+
+        AngleBrackets {
+            bindings = <&kp LS(COMMA) &kp LS(DOT) &kp LEFT>;
+            key-positions = <37 36>;
         };
 
         BT0 {
@@ -57,10 +62,6 @@
             key-positions = <33 46>;
         };
 
-        AngleBrackets {
-            bindings = <&kp LS(COMMA)>;
-            key-positions = <37 36>;
-        };
     };
 
     keymap {
@@ -69,8 +70,8 @@
         Alphas {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  ESC  |  Q  |  W  |  E    |  R   |  T   |                                         |  Y   |  U   |  I    |  O   |   P   | BCKSP |
-            // |  TAB  |  A  |  S  |  D    |  F   |  G   |                                         |  H   |  J   |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C    |  V   |  B   | DELETE  |  BCKSP   |  |  WIN  |   CLCK  |  N   |  M   |  ,    |  .   |   /   | ENTER |
+            // |  TAB  |  A  |  S  |  D    |  F   |  G   |                                         |  H   |  J   |  K    |  L   |  ; :  |  ' "  |
+            // | SHIFT |  Z  |  X  |  C    |  V   |  B   | DELETE  |  BCKSP   |  |  WIN  |  TO(1)  |  N   |  M   |  ,    |  .   |  / \  | ENTER |
             //                     | PRTSC |  ALT | CTRL | L(2)/SP | L(4)/ENT |  |  L(3) | L(2)/SP | CTRL |  ALT | PL/PA |
 
             bindings = <
@@ -86,6 +87,12 @@
         };
 
         ColemakDH {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |       |  Q   |  W   |  F   |  P   |  B   |                                         |  J   |  L   |  U   |  Y   | ; :  |      |
+            // |       |  A   |  R   |  S   |  T   |  G   |                                         |  M   |  N   |  E   |  I   |  O   |      |
+            // |       |  Z   |  X   |  C   |  D   |  V   |      |      |      |      |      |TO(0) |  K   |  H   |      |      |      |      |
+            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+
             bindings = <
 &trans  &kp Q  &kp W  &kp F   &kp P   &kp B                                   &kp J   &kp L   &kp U   &kp Y   &mt COLON SEMI  &trans
 &trans  &kp A  &kp R  &kp S   &kp T   &kp G                                   &kp M   &kp N   &kp E   &kp I   &kp O           &trans
@@ -96,10 +103,10 @@
 
         NumLayer {
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // | NMLCK |  /   |  7   |  8   |  9   |  -   |                                         |  /   |  7   |  8   |  9   |  -   |      |
-            // |       |  *   |  4   |  5   |  6   |  +   |                                         |  *   |  4   |  5   |  6   |  +   |  =   |
-            // |       |  0   |  1   |  2   |  3   |  .   | BCKSP|      |      |      |      |      |  0   |  1   |  2   |  3   |  .   |      |
-            //                       |      |      |      |      |      |      |      | L(5) |      |      |      |      |
+            // |       |  /   |  7   |  8   |  9   |  -   |                                         |  /   |  7   |  8   |  9   |  -   |      |
+            // | NMLCK |  *   |  4   |  5   |  6   |  +   |                                         |  *   |  4   |  5   |  6   |  +   |  =   |
+            // |       |  0   |  1   |  2   |  3   |  .   |      |      |      |      |      |      |  0   |  1   |  2   |  3   |  .   |      |
+            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
 &trans          &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                   &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &trans
@@ -116,7 +123,7 @@
         NavLayer {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |   `   |  !   |  @   |  #   |  $   |  %   |                                         |  ^   |  &   |  *   |  (   |   )  |      |
-            // |  CAPS |      |      |      |      |      |                                         | HOME |  UP  | END  |  [   |   ]  |  \   |
+            // |  CAPS |      |      |      |      |      |                                         | HOME |  UP  | END  |  [   |   ]  |      |
             // |       |      |      |      |      |      |      |      |      |      |      |      | LEFT | DOWN | RGHT |  {   |   }  |      |
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
