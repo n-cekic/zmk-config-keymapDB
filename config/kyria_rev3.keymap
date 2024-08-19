@@ -226,8 +226,8 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
-&trans          &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                          &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &trans
-&kp KP_NUMLOCK  &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS                                           &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp EQUAL
+&kp KP_NUMLOCK  &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                          &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &trans
+&kp CAPS        &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS                                           &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp EQUAL
 &trans          &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp BACKSPACE  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans
                                                   &trans           &trans           &trans      &trans         &trans  &trans  &trans  &trans           &trans           &trans
             >;
