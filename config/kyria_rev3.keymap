@@ -15,139 +15,139 @@
         Lock {
             bindings = <&kp LG(L)>;
             key-positions = <40 49>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         BT0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <30 43>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         BT1 {
             bindings = <&bt BT_SEL 1>;
             key-positions = <31 44>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         BT2 {
             bindings = <&bt BT_SEL 2>;
             key-positions = <32 45>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         BTClear {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <33 46>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         ParenthesisCOMBO {
             bindings = <&ParenthesisC>;
             key-positions = <7 9>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         BracketCOMBO {
             bindings = <&BracketC>;
             key-positions = <21 19>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         CurlyCOMBO {
             bindings = <&CurlyC>;
             key-positions = <37 35>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         AngleCOMBO {
             bindings = <&AngleC>;
             key-positions = <36 37>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         LParen {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <7 8>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         RParen {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <8 9>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         LBracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <20 19>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         RBracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <20 21>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         LCurly {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <36 35>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         RCurly {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <36 37>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         Grave {
             bindings = <&kp GRAVE>;
             key-positions = <0 12>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         Exc {
             bindings = <&kp EXCLAMATION>;
             key-positions = <1 13>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         At {
             bindings = <&kp AT_SIGN>;
             key-positions = <2 14>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         Hash {
             bindings = <&kp HASH>;
             key-positions = <15 3>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         Dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <4 16>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         Percent {
             bindings = <&kp PERCENT>;
             key-positions = <5 17>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         Caret {
             bindings = <&kp CARET>;
             key-positions = <6 18>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
 
         Ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <7 19>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <175>;
         };
     };
 
@@ -270,9 +270,15 @@
         };
 
         NXLayer {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // | REPEAT| RFRSH| RESET| NORM | DESEL| RDISP|                                         |      |      |      |      |      |      |
+            // | NAME  | FEAT | FACE | BODY | EDGE | MEAS |                                         |      |      |      |      |      |      |
+            // | MODEL | SETR |RESETR| SECT | DISP | HIDE |      |      |      |      |      |      |      |      |      |      |      |      |
+            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+
             bindings = <
 &kp F4  &kp F5      &kp F6      &kp F8     &kp F9     &kp F12                                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp F2  &kp LS(F)   &kp LS(G)   &kp LS(E)  &kp LS(B)  &kp L                                      &trans  &trans  &trans  &trans  &trans  &trans
+&kp F2  &kp LS(F)   &kp LS(G)   &kp LS(B)  &kp LS(E)  &kp L                                      &trans  &trans  &trans  &trans  &trans  &trans
 &kp M   &kp LC(F2)  &kp LC(F3)  &kp LC(H)  &kp LC(J)  &kp LC(B)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
