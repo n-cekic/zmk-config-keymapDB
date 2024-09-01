@@ -273,6 +273,8 @@
 &trans  &kp F11  &kp F12  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &trans  &trans
                           &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         NXLayer {
