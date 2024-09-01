@@ -31,7 +31,7 @@
         };
 
         BT2 {
-            bindings = <&bt BT_SEL 2>;
+            bindings = <&bt BT_CLR>;
             key-positions = <32 45>;
             require-prior-idle-ms = <175>;
         };
@@ -45,61 +45,61 @@
         ParenthesisCOMBO {
             bindings = <&ParenthesisC>;
             key-positions = <7 9>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         BracketCOMBO {
             bindings = <&BracketC>;
             key-positions = <21 19>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         CurlyCOMBO {
             bindings = <&CurlyC>;
             key-positions = <37 35>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         AngleCOMBO {
             bindings = <&AngleC>;
             key-positions = <36 37>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         LParen {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <7 8>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         RParen {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <8 9>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         LBracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <20 19>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         RBracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <20 21>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         LCurly {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <36 35>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         RCurly {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <36 37>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         Grave {
@@ -149,6 +149,12 @@
             key-positions = <7 19>;
             require-prior-idle-ms = <175>;
         };
+
+        Asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <20 8>;
+            require-prior-idle-ms = <250>;
+        };
     };
 
     macros {
@@ -192,10 +198,10 @@
             //                     | PRTSC |  ALT | CTRL | L(2)/SP |  L(4) |  |  L(3) | L(2)/SP | CTRL |  ALT | PL/PA |
 
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E            &kp R         &kp T                                                                 &kp Y              &kp U  &kp I             &kp O    &kp P                &kp BACKSPACE
-&kp TAB    &kp A  &kp S  &kp D            &kp F         &kp G                                                                 &kp H              &kp J  &kp K             &kp L    &kp SEMICOLON        &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C            &kp V         &kp B             &kp DELETE   &kp ENTER  &kp RIGHT_WIN  &to 1        &kp N              &kp M  &kp COMMA         &kp DOT  &mt BACKSLASH SLASH  &kp KP_ENTER
-                         &kp PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 2 SPACE  &mo 5      &mo 3          &lt 2 SPACE  &kp RIGHT_CONTROL  &mo 4  &kp C_PLAY_PAUSE
+&kp ESC     &kp Q  &kp W  &kp E            &kp R         &kp T                                                                              &kp Y              &kp U  &kp I             &kp O    &kp P                &kp BACKSPACE
+&kp TAB     &kp A  &kp S  &kp D            &kp F         &kp G                                                                              &kp H              &kp J  &kp K             &kp L    &kp SEMICOLON        &kp SQT
+&caps_word  &kp Z  &kp X  &kp C            &kp V         &kp B             &kp DELETE   &kp BACKSPACE  &kp RIGHT_WIN  &to 1                 &kp N              &kp M  &kp COMMA         &kp DOT  &mt BACKSLASH SLASH  &key_repeat
+                          &kp PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 2 SPACE  &lt 5 ENTER    &lt 3 ENTER    &mt LEFT_SHIFT SPACE  &kp RIGHT_CONTROL  &mo 4  &kp C_PLAY_PAUSE
             >;
 
             sensor-bindings =
@@ -213,7 +219,7 @@
             bindings = <
 &trans  &kp Q  &kp W  &kp F   &kp P   &kp B                                   &kp J   &kp L   &kp U   &kp Y   &kp SEMICOLON  &trans
 &trans  &kp A  &kp R  &kp S   &kp T   &kp G                                   &kp M   &kp N   &kp E   &kp I   &kp O          &trans
-&trans  &kp Z  &kp X  &kp C   &kp D   &kp V   &trans  &trans  &trans  &to 0   &kp K   &kp H   &trans  &trans  &trans         &trans
+&trans  &kp Z  &kp X  &kp C   &kp D   &kp V   &trans  &trans  &trans  &trans  &kp K   &kp H   &trans  &trans  &trans         &trans
                       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -226,10 +232,10 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
-&kp KP_NUMLOCK  &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                          &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &trans
-&kp CAPS        &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS                                           &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp EQUAL
-&trans          &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp BACKSPACE  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans
-                                                  &trans           &trans           &trans      &trans         &trans  &trans  &trans  &trans           &trans           &trans
+&kp KP_NUMLOCK  &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                   &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &trans
+&kp CAPS        &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS                                    &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp EQUAL
+&kp EQUAL       &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans
+                                                  &trans           &trans           &trans      &trans  &trans  &trans  &trans  &trans           &trans           &trans
             >;
 
             sensor-bindings =
