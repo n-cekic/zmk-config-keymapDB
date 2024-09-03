@@ -155,6 +155,12 @@
             key-positions = <20 8>;
             require-prior-idle-ms = <250>;
         };
+
+        HomeShiftEndCombo {
+            bindings = <&HomeShiftEnd>;
+            key-positions = <20 18>;
+            require-prior-idle-ms = <250>;
+        };
     };
 
     macros {
@@ -184,6 +190,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(COMMA) &kp LS(PERIOD) &kp LEFT>;
             label = "ANGLEC";
+        };
+
+        HomeShiftEnd: HomeShiftEnd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp LS(END)>;
+            label = "HOMESHIFTEND";
         };
     };
 
