@@ -161,6 +161,42 @@
             key-positions = <20 18>;
             require-prior-idle-ms = <250>;
         };
+
+        Paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <28 13>;
+            require-prior-idle-ms = <250>;
+        };
+
+        Paste2 {
+            bindings = <&Paste2>;
+            key-positions = <28 14>;
+            require-prior-idle-ms = <250>;
+        };
+
+        Paste3 {
+            bindings = <&Paste3>;
+            key-positions = <28 15>;
+            require-prior-idle-ms = <250>;
+        };
+
+        Copy {
+            bindings = <&kp K_COPY>;
+            key-positions = <27 26>;
+            require-prior-idle-ms = <250>;
+        };
+
+        Undo {
+            bindings = <&kp K_UNDO>;
+            key-positions = <26 25>;
+            require-prior-idle-ms = <250>;
+        };
+
+        Redo {
+            bindings = <&kp K_REDO>;
+            key-positions = <28 29>;
+            require-prior-idle-ms = <250>;
+        };
     };
 
     macros {
@@ -197,6 +233,20 @@
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LS(END)>;
             label = "HOMESHIFTEND";
+        };
+
+        Paste2: Paste2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V) &kp KP_NUMBER_2 &kp ENTER>;
+            label = "PASTE2";
+        };
+
+        Paste3: Paste3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V) &kp KP_NUMBER_3 &kp ENTER>;
+            label = "PASTE3";
         };
     };
 
