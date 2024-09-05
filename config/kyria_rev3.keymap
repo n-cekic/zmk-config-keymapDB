@@ -163,7 +163,7 @@
         };
 
         Paste {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp LC(V)>;
             key-positions = <28 13>;
             require-prior-idle-ms = <250>;
         };
@@ -181,19 +181,19 @@
         };
 
         Copy {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp LC(C)>;
             key-positions = <27 26>;
             require-prior-idle-ms = <250>;
         };
 
         Undo {
-            bindings = <&kp K_UNDO>;
+            bindings = <&kp LC(Z)>;
             key-positions = <26 25>;
             require-prior-idle-ms = <250>;
         };
 
         Redo {
-            bindings = <&kp K_REDO>;
+            bindings = <&kp LC(Y)>;
             key-positions = <28 29>;
             require-prior-idle-ms = <250>;
         };
@@ -201,6 +201,12 @@
         CapsWord {
             bindings = <&caps_word>;
             key-positions = <25 24>;
+            require-prior-idle-ms = <250>;
+        };
+
+        PasteClip {
+            bindings = <&kp LG(V)>;
+            key-positions = <28 16>;
             require-prior-idle-ms = <250>;
         };
     };
@@ -244,14 +250,14 @@
         Paste2: Paste2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(V) &kp KP_NUMBER_2 &kp ENTER>;
+            bindings = <&kp LG(V) &kp DOWN &kp ENTER>;
             label = "PASTE2";
         };
 
         Paste3: Paste3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(V) &kp KP_NUMBER_3 &kp ENTER>;
+            bindings = <&kp LG(V) &kp DOWN &kp DOWN &kp ENTER>;
             label = "PASTE3";
         };
     };
