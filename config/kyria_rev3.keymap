@@ -250,14 +250,14 @@
         Paste2: Paste2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(V) &kp DOWN &kp ENTER>;
+            bindings = <&kp LG(V) &kp DOWN &kp DOWN &kp ENTER>;
             label = "PASTE2";
         };
 
         Paste3: Paste3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(V) &kp DOWN &kp DOWN &kp ENTER>;
+            bindings = <&kp LG(V) &kp DOWN &kp DOWN &kp DOWN &kp ENTER>;
             label = "PASTE3";
         };
     };
