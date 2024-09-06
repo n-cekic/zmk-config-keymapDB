@@ -162,8 +162,8 @@
             require-prior-idle-ms = <250>;
         };
 
-        Paste {
-            bindings = <&kp LC(V)>;
+        Paste1 {
+            bindings = <&Paste1>;
             key-positions = <28 13>;
             require-prior-idle-ms = <250>;
         };
@@ -247,18 +247,25 @@
             label = "HOMESHIFTEND";
         };
 
-        Paste2: Paste2 {
+        Paste3: Paste2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(V) &kp DOWN &kp DOWN &kp ENTER>;
+            bindings = <&kp LG(V) &kp DOWN &kp DOWN_ARROW &kp DOWN &kp ENTER>;
             label = "PASTE2";
         };
 
-        Paste3: Paste3 {
+        Paste2: Paste3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(V) &kp DOWN &kp DOWN &kp DOWN &kp ENTER>;
+            bindings = <&kp LG(V) &kp DOWN &kp DOWN &kp ENTER>;
             label = "PASTE3";
+        };
+
+        Paste1: Paste1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V) &kp DOWN &kp ENTER>;
+            label = "PASTE1";
         };
     };
 
@@ -307,10 +314,10 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
-&kp KP_NUMLOCK  &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                   &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &trans
-&kp EQUAL       &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS                                    &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp EQUAL
-&kp CAPSLOCK    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans
-                                                  &trans           &trans           &trans      &trans  &trans  &trans  &trans  &trans           &trans           &trans
+&kp KP_NUMLOCK  &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                          &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &trans
+&kp EQUAL       &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS                                           &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp EQUAL
+&kp CAPSLOCK    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp BACKSPACE  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans
+                                                  &trans           &trans           &trans      &trans         &trans  &trans  &trans  &trans           &trans           &trans
             >;
 
             sensor-bindings =
