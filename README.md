@@ -1,1 +1,1 @@
-![my_keymap (1)](https://github.com/user-attachments/assets/cb0f4f61-43fb-40f8-a3cc-b48cd0df4330)
+![my_keymap](https://github.com/user-attachments/assets/77f546ba-e7b7-4112-8d49-8434cb149165)
