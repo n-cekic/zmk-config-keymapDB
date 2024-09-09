@@ -259,14 +259,14 @@
             label = "HOMESHIFTEND";
         };
 
-        Paste3: Paste2 {
+        Paste3: Paste3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(V) &kp DOWN &kp DOWN_ARROW &kp DOWN &kp ENTER>;
+            bindings = <&kp LG(V) &kp DOWN &kp DOWN &kp DOWN &kp ENTER>;
             label = "PASTE2";
         };
 
-        Paste2: Paste3 {
+        Paste2: Paste2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(V) &kp DOWN &kp DOWN &kp ENTER>;
@@ -286,10 +286,10 @@
 
         Alphas {
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  Q  |  W  |  E    |  R   |  T   |                                         |  Y   |  U   |  I    |  O   |   P   | BCKSP |
-            // |  TAB  |  A  |  S  |  D    |  F   |  G   |                                         |  H   |  J   |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C    |  V   |  B   | DELETE  | BCKSP    |  |  WIN  | TOG(1)  |  N   |  M   |  ,    |  .   |  / \  | ENTER |
-            //                     | PRTSC |  ALT | CTRL | L(2)/SP | L(5)/ENT |  |  L(3) | L(2)/SP | CTRL |  ALT | PL/PA |
+            // |  ESC  |  Q  |  W  |  E    |  R   |  T   |                                      |  Y   |  U   |  I    |  O   |   P   | BCKSP |
+            // |  TAB  |  A  |  S  |  D    |  F   |  G   |                                      |  H   |  J   |  K    |  L   |   ;   |   '   |
+            // | SHIFT |  Z  |  X  |  C    |  V   |  B   | DELETE  | ENTER |  |  WIN  | TOG(1)  |  N   |  M   |  ,    |  .   |  / \  | ENTER |
+            //                     | PRTSC |  ALT | CTRL | L(2)/SP | SHIFT |  |  L(3) | L(2)/SP | CTRL |  ALT | PL/PA |
 
             bindings = <
 &kp ESC         &kp Q  &kp W  &kp E            &kp R         &kp T                                                                      &kp Y              &kp U          &kp I             &kp O    &kp P                &kp BACKSPACE
@@ -320,10 +320,10 @@
 
         NumLayer {
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // | NMLCK |  /   |  7   |  8   |  9   |  -   |                                         |  /   |  7   |  8   |  9   |  -   |      |
-            // |  =    |  *   |  4   |  5   |  6   |  +   |                                         |  *   |  4   |  5   |  6   |  +   |  =   |
-            // | CPLCK |  0   |  1   |  2   |  3   |  .   |      |      |      |      |      |      |  0   |  1   |  2   |  3   |  .   |      |
-            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+            // | NMLCK | / F12 | 7 F7 | 8 F8 | 9 F9 |  - _ |                                         |  /   |  7   |  8   |  9   | - _ |      |
+            // |  =    | * F11 | 4 F4 | 5 F5 | 6 F6 |  +   |                                         |  *   |  4   |  5   |  6   | +   |  =   |
+            // |       | 0 F10 | 1 F1 | 2 F2 | 3 F3 |  .   | BCKSP|      |      |      |      |      |  0   |  1   |  2   |  3   | .   |      |
+            //                        |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
 &kp KP_NUMLOCK  &mt F12 SLASH        &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9  &mt UNDERSCORE MINUS                                         &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &mt UNDERSCORE MINUS  &trans
