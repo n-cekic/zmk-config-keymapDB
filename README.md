@@ -2,7 +2,7 @@
 ![my_keymap (4)](https://github.com/user-attachments/assets/ef82384b-3fdd-4c02-bf03-2d6802bdf96c)
 ![my_keymap (2)](https://github.com/user-attachments/assets/a6d37cae-3ad2-44a9-ab4b-cbfe047e4615)
 
-ENCODERS:
+ENCODERS: (PRSC & PLAY PAUSE POSITIONS)
 
     ALPHA LAYER:
       LEFT: VOL UP, VOL DOWN
