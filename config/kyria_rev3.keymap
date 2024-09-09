@@ -15,31 +15,31 @@
         Lock {
             bindings = <&kp LG(L)>;
             key-positions = <40 49>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         BT0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <30 43>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         BT1 {
             bindings = <&bt BT_SEL 1>;
             key-positions = <31 44>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         BT2 {
             bindings = <&bt BT_CLR>;
             key-positions = <32 45>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         BTClear {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <33 46>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         ParenthesisCOMBO {
@@ -105,49 +105,49 @@
         Grave {
             bindings = <&kp GRAVE>;
             key-positions = <0 12>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         Exc {
             bindings = <&kp EXCLAMATION>;
             key-positions = <1 13>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         At {
             bindings = <&kp AT_SIGN>;
             key-positions = <2 14>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         Hash {
             bindings = <&kp HASH>;
             key-positions = <15 3>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         Dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <4 16>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         Percent {
             bindings = <&kp PERCENT>;
             key-positions = <5 17>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         Caret {
             bindings = <&kp CARET>;
             key-positions = <6 18>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         Ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <7 19>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <250>;
         };
 
         Asterisk {
