@@ -221,6 +221,12 @@
             key-positions = <25 24>;
             require-prior-idle-ms = <250>;
         };
+
+        AsteriskSurroundCOMBO {
+            bindings = <&AsteriskSurround>;
+            key-positions = <18 19>;
+            require-prior-idle-ms = <250>;
+        };
     };
 
     macros {
@@ -278,6 +284,13 @@
             #binding-cells = <0>;
             bindings = <&kp LG(V) &kp DOWN &kp ENTER>;
             label = "PASTE1";
+        };
+
+        AsteriskSurround: AsteriskSurround {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp ASTERISK &kp END &kp ASTRK>;
+            label = "ASTERISKSURROUND";
         };
     };
 
