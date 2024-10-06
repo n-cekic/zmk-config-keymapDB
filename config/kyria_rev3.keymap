@@ -334,13 +334,9 @@
     };
 
     sensors {
-        left_config {
-            triggers-per-rotation = <36>;
-        };
+        left_config { triggers-per-rotation = <36>; };
 
-        right_config {
-            triggers-per-rotation = <6>;
-        };
+        right_config { triggers-per-rotation = <6>; };
     };
 
     keymap {
@@ -406,8 +402,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
-                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
     };
 };
