@@ -337,11 +337,11 @@
                 <&inc_dec_kp C_NEXT C_PREV>;
         };
 
-        Canary {
+        GalliumV1 {
             bindings = <
-&trans  &kp W  &kp L  &kp Y   &kp P   &kp B                                   &kp Z   &kp F   &kp O   &kp U   &kp SEMI  &trans
-&trans  &kp C  &kp R  &kp S   &kp T   &kp G                                   &kp M   &kp N   &kp E   &kp I   &kp A     &trans
-&trans  &kp Q  &kp J  &kp V   &kp D   &kp K   &trans  &trans  &trans  &trans  &kp X   &kp H   &trans  &trans  &trans    &trans
+&trans  &kp B  &kp L  &kp D   &kp C   &kp V                                   &kp Z   &kp Y   &kp O   &kp U   &kp SEMI  &trans
+&trans  &kp N  &kp R  &kp T   &kp S   &kp G                                   &kp P   &kp H   &kp A   &kp E   &kp I     &trans
+&trans  &kp Q  &kp X  &kp M   &kp V   &kp J   &trans  &trans  &trans  &trans  &kp K   &kp F   &trans  &trans  &trans    &trans
                       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
