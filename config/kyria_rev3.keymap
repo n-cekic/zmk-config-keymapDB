@@ -158,7 +158,7 @@
 
         HomeShiftEndCombo {
             bindings = <&HomeShiftEnd>;
-            key-positions = <21 22>;
+            key-positions = <18 20>;
             require-prior-idle-ms = <250>;
         };
 
@@ -344,10 +344,10 @@
 
         Alphas {
             bindings = <
-&kp ESC     &kp Q  &kp W  &kp E            &kp R         &kp T                                                                   &kp Y              &kp U     &kp I                           &kp O    &kp P                &kp BACKSPACE
-&kp TAB     &kp A  &kp S  &kp D            &kp F         &kp G                                                                   &kp H              &kp J     &kp K                           &kp L    &kp SEMICOLON        &kp SQT
-&caps_word  &kp Z  &kp X  &kp C            &kp V         &kp B             &DELsBACK       &kp ENTER  &kp CAPSLOCK  &tog 1       &kp N              &kp M     &kp COMMA                       &kp DOT  &mt BACKSLASH SLASH  &kp ENTER
-                          &kp PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &mo 2      &mo 3         &lt 2 SPACE  &kp RIGHT_CONTROL  &kp RWIN  &LockScreen LG(L) C_PLAY_PAUSE
+&kp ESC     &kp Q  &kp W  &kp E            &kp R         &kp T                                                                         &kp Y              &kp U     &kp I                           &kp O    &kp P                &kp BACKSPACE
+&kp TAB     &kp A  &kp S  &kp D            &kp F         &kp G                                                                         &kp H              &kp J     &kp K                           &kp L    &kp SEMICOLON        &kp SQT
+&caps_word  &kp Z  &kp X  &kp C            &kp V         &kp B             &DELsBACK             &kp ENTER  &kp CAPSLOCK  &tog 1       &kp N              &kp M     &kp COMMA                       &kp DOT  &mt BACKSLASH SLASH  &kp ENTER
+                          &kp PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT SPACE  &mo 2      &mo 3         &lt 2 SPACE  &kp RIGHT_CONTROL  &kp RWIN  &LockScreen LG(L) C_PLAY_PAUSE
             >;
 
             sensor-bindings =
