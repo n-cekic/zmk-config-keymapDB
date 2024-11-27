@@ -162,24 +162,6 @@
             require-prior-idle-ms = <250>;
         };
 
-        Paste1 {
-            bindings = <&Paste1>;
-            key-positions = <28 13>;
-            require-prior-idle-ms = <250>;
-        };
-
-        Paste2 {
-            bindings = <&Paste2>;
-            key-positions = <28 14>;
-            require-prior-idle-ms = <250>;
-        };
-
-        Paste3 {
-            bindings = <&Paste3>;
-            key-positions = <28 15>;
-            require-prior-idle-ms = <250>;
-        };
-
         PasteClip {
             bindings = <&kp LG(V)>;
             key-positions = <28 16>;
@@ -283,27 +265,6 @@
             label = "HOMESHIFTEND";
         };
 
-        Paste3: Paste3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(V) &kp DOWN &kp DOWN &kp DOWN &kp ENTER>;
-            label = "PASTE2";
-        };
-
-        Paste2: Paste2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(V) &kp DOWN &kp DOWN &kp ENTER>;
-            label = "PASTE3";
-        };
-
-        Paste1: Paste1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(V) &kp DOWN &kp ENTER>;
-            label = "PASTE1";
-        };
-
         AsteriskSurround: AsteriskSurround {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -319,7 +280,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <1000>;
+            tapping-term-ms = <800>;
             flavor = "tap-preferred";
         };
 
@@ -344,10 +305,10 @@
 
         Alphas {
             bindings = <
-&kp ESC     &kp Q  &kp W  &kp E            &kp R         &kp T                                                                         &kp Y              &kp U     &kp I                           &kp O    &kp P                &kp BACKSPACE
-&kp TAB     &kp A  &kp S  &kp D            &kp F         &kp G                                                                         &kp H              &kp J     &kp K                           &kp L    &kp SEMICOLON        &kp SQT
-&caps_word  &kp Z  &kp X  &kp C            &kp V         &kp B             &DELsBACK             &kp ENTER  &kp CAPSLOCK  &tog 1       &kp N              &kp M     &kp COMMA                       &kp DOT  &mt BACKSLASH SLASH  &kp ENTER
-                          &kp PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT SPACE  &mo 2      &mo 3         &lt 2 SPACE  &kp RIGHT_CONTROL  &kp RWIN  &LockScreen LG(L) C_PLAY_PAUSE
+&kp ESC  &kp Q  &kp W  &kp E            &kp R         &kp T                                                                         &kp Y              &kp U     &kp I                           &kp O    &kp P                &kp BACKSPACE
+&kp TAB  &kp A  &kp S  &kp D            &kp F         &kp G                                                                         &kp H              &kp J     &kp K                           &kp L    &kp SEMICOLON        &kp SQT
+&mo 3    &kp Z  &kp X  &kp C            &kp V         &kp B             &DELsBACK             &kp ENTER  &kp CAPSLOCK  &tog 1       &kp N              &kp M     &kp COMMA                       &kp DOT  &mt BACKSLASH SLASH  &kp ENTER
+                       &kp PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT SPACE  &mo 2      &mo 3         &lt 2 SPACE  &kp RIGHT_CONTROL  &kp RWIN  &LockScreen LG(L) C_PLAY_PAUSE
             >;
 
             sensor-bindings =
@@ -366,10 +327,10 @@
 
         NumLayer {
             bindings = <
-&kp KP_NUMLOCK  &mt F12 SLASH        &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9  &kp MINUS                                   &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &trans
-&trans          &mt F11 ASTERISK     &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5  &mt F6 KP_NUMBER_6  &kp PLUS                                    &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp EQUAL
-&kp EQUAL       &mt F10 KP_NUMBER_0  &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &kp PERIOD  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans
-                                                         &trans              &trans              &trans      &trans  &trans  &trans  &trans  &trans           &trans           &trans
+&kp KP_NUMLOCK  &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                             &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS   &trans
+&trans          &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS                                              &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS    &kp EQUAL
+&trans          &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp BACKSPACE  &kp EQUAL  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &trans
+                                                  &trans           &trans           &trans      &trans         &trans     &trans  &trans  &trans           &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_FAST_FORWARD C_REWIND>;
@@ -377,10 +338,10 @@
 
         NavLayer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans    &trans        &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                  &kp HOME  &kp UP_ARROW  &kp END    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans                                  &trans    &trans        &trans     &trans  &trans  &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans                                  &kp HOME  &kp UP_ARROW  &kp END    &trans  &trans  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans  &trans
+                         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans
             >;
 
             sensor-bindings =
