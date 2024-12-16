@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -306,19 +305,10 @@
 
         Alphas {
             bindings = <
-&kp ESC  &kp Q  &kp W  &kp E            &kp R         &kp T                                                                         &kp Y              &kp U     &kp I                           &kp O    &kp P                &kp BACKSPACE
-&kp TAB  &kp A  &kp S  &kp D            &kp F         &kp G                                                                         &kp H              &kp J     &kp K                           &kp L    &kp SEMICOLON        &kp SQT
-&mo 3    &kp Z  &kp X  &kp C            &kp V         &kp B             &DELsBACK             &kp ENTER  &kp CAPSLOCK  &tog 1       &kp N              &kp M     &kp COMMA                       &kp DOT  &mt BACKSLASH SLASH  &kp ENTER
-                       &kp PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT SPACE  &mo 2      &mo 3         &lt 2 SPACE  &kp RIGHT_CONTROL  &kp RWIN  &LockScreen LG(L) C_PLAY_PAUSE
-            >;
-        };
-
-        GalliumV1 {
-            bindings = <
-&trans  &kp B  &kp L  &kp D   &kp C   &kp V                                   &kp Z   &kp Y   &kp O   &kp U   &kp SEMI  &trans
-&trans  &kp N  &kp R  &kp T   &kp S   &kp G                                   &kp P   &kp H   &kp A   &kp E   &kp I     &trans
-&trans  &kp Q  &kp X  &kp M   &kp W   &kp J   &trans  &trans  &trans  &trans  &kp K   &kp F   &trans  &trans  &trans    &trans
-                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp Q      &kp W      &kp E            &kp R         &kp T                                                                         &kp Y              &kp U      &kp I                           &kp O      &kp P                &kp BACKSPACE
+&kp TAB  &kp LG(A)  &kp LA(S)  &kp LS(D)        &kp LC(F)     &kp G                                                                         &kp H              &kp RC(J)  &kp RS(K)                       &kp RA(L)  &kp RG(SEMICOLON)    &kp SQT
+&mo 2    &kp Z      &kp X      &kp C            &kp V         &kp B             &DELsBACK             &kp ENTER  &kp CAPSLOCK  &tog 1       &kp N              &kp M      &kp COMMA                       &kp DOT    &mt BACKSLASH SLASH  &kp ENTER
+                               &kp PRINTSCREEN  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT SPACE  &mo 1      &mo 2         &lt 1 SPACE  &kp RIGHT_CONTROL  &kp RWIN   &LockScreen LG(L) C_PLAY_PAUSE
             >;
         };
 
