@@ -9,9 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &rgb_underglow {
-    compatible = "zmk,rgb-underglow";
     chain-length = <25>;  // Number of LEDs
-    features = "UNDERGLOW", "PER_KEY";
 };
 
 / {
