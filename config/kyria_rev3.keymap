@@ -11,6 +11,10 @@
 
 &led_strip { chain-length = <25>; };
 
+&mt {
+    tapping-term-ms = <300>; // value already set by default is 200
+};
+
 / {
     combos {
         compatible = "zmk,combos";
