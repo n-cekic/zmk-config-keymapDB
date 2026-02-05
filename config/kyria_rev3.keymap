@@ -7,9 +7,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
+// #include <dt-bindings/zmk/rgb.h>
 
-&led_strip { chain-length = <25>; };
+// &led_strip { chain-length = <25>; };
 
 &mt {
     tapping-term-ms = <300>; // value already set by default is 200
